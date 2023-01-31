@@ -7,6 +7,14 @@ public class Max {
         return result;
     }
 
+    public static int max(int first, int second, int third) {
+        return (max(max(first, second), third));
+    }
+
+    public static int max(int first, int second, int third, int fourth) {
+        return (max(first, second, max(third, fourth)));
+    }
+
     public static void main(String[] args) {
         int result = Max.max(5, 8);
         System.out.println("max value = " + result);
